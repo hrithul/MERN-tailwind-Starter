@@ -109,6 +109,46 @@ To run the application, you'll need to open two terminal windows:
 
 Now, you can access the application at `http://localhost:5173`.
 
+## File Structure
+
+Here is an overview of the project structure:
+
+```
+.
+├── client/                     # React frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── components/           # React components
+│   │   │   ├── auth/
+│   │   │   ├── dashboard/
+│   │   │   ├── layout/
+│   │   │   └── private-routes/
+│   │   ├── features/             # Redux Toolkit slices
+│   │   │   ├── auth/
+│   │   │   └── errors/
+│   │   ├── App.jsx               # Main app component
+│   │   ├── index.css             # Tailwind CSS entry
+│   │   └── main.jsx              # React entry point
+│   ├── .gitignore
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+├── config/                     # Backend configuration
+│   ├── keys.js
+│   └── passport.js             # Passport.js strategy
+├── models/                     # Mongoose models
+│   └── Users.js
+├── routes/                     # API routes
+│   └── api/
+│       └── users.js
+├── validation/                 # Input validation logic
+│   ├── login.js
+│   └── register.js
+├── .gitignore
+├── package.json
+└── server.js                   # Express server entry point
+```
+
 ## License
 
 This project is licensed under the MIT License.
