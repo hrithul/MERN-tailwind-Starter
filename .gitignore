@@ -1,0 +1,48 @@
+# Node modules
+node_modules/
+client/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*  # for Vite's env files (e.g., .env.development, .env.production)
+
+# Vite build output
+client/dist/
+
+# Optional: cache from tools like Vite or ESLint
+.vite/
+client/.vite/
+.eslintcache
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build output (if you build backend)
+build/
+server/build/
+
+# Coverage from test tools
+coverage/
+
+# Optional: local databases or uploads
+*.sqlite
+*.db
+uploads/
+tmp/
